@@ -1,0 +1,33 @@
+{
+  "name": "mywehr-hrms-playwright",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hybrid (Page Object + Data Driven) Playwright/TypeScript framework covering the MyWe HRMS web application: authentication, RBAC across personas, module smoke coverage and inter-module data-reflection flows.",
+  "scripts": {
+    "test": "playwright test --project=hrms",
+    "test:smoke": "playwright test --project=hrms",
+    "test:regression": "playwright test --project=hrms",
+    "test:critical-path": "playwright test --project=hrms --grep @critical",
+    "test:rbac": "playwright test --project=hrms --grep @rbac",
+    "test:intermodule": "playwright test --project=hrms --grep @intermodule",
+    "test:auth": "playwright test --project=hrms tests/01-auth",
+    "test:navigation": "playwright test --project=hrms tests/02-navigation",
+    "test:configuration": "playwright test --project=hrms tests/04-configuration",
+    "test:employee": "playwright test --project=hrms tests/05-employee",
+    "test:leave": "playwright test --project=hrms tests/06-leave",
+    "test:flaky": "playwright test --project=demo tests/demo/LeaveFlaky.spec.ts",
+    "test:healable": "playwright test --project=demo tests/demo/LeaveHealable.spec.ts",
+    "test:broken": "playwright test --project=demo tests/demo/LeaveBroken.spec.ts",
+    "test:demo": "playwright test --project=demo",
+    "test:ci": "cross-env HEADLESS=true RETRY_COUNT=2 playwright test --project=hrms",
+    "test:grid": "cross-env BROWSER=remote-chrome HEADLESS=true playwright test --project=hrms",
+    "report": "playwright show-report test-output/reports/html",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^22.0.0",
+    "cross-env": "^7.0.3",
+    "typescript": "^5.6.0"
+  }
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "scenario": "Valid email and company code with a wrong password",
+    "companyCode": "myc001",
+    "email": "mycompany@yopmail.com",
+    "password": "WrongPassword@999",
+    "expectedError": "Invalid company code, email or password",
+    "shouldSucceed": false
+  },
+  {
+    "scenario": "Valid credentials against a company code that does not exist",
+    "companyCode": "zzz999",
+    "email": "mycompany@yopmail.com",
+    "password": "mycompany@123",
+    "expectedError": "Invalid company code, email or password",
+    "shouldSucceed": false
+  },
+  {
+    "scenario": "Unregistered email against a valid company code",
+    "companyCode": "myc001",
+    "email": "not.a.real.user@yopmail.com",
+    "password": "mycompany@123",
+    "expectedError": "Invalid company code, email or password",
+    "shouldSucceed": false
+  },
+  {
+    "scenario": "HR password used with the Admin email (cross-persona credential mixing)",
+    "companyCode": "myc001",
+    "email": "mycompany@yopmail.com",
+    "password": "hr@123",
+    "expectedError": "Invalid company code, email or password",
+    "shouldSucceed": false
+  },
+  {
+    "scenario": "Password casing altered - authentication must be case sensitive",
+    "companyCode": "myc001",
+    "email": "hr@yopmail.com",
+    "password": "HR@123",
+    "expectedError": "Invalid company code, email or password",
+    "shouldSucceed": false
+  }
+]

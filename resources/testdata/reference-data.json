@@ -1,0 +1,39 @@
+{
+  "_comment": "Reference data that already exists in tenant myc001. Tests select these rather than create them. Update this file when the seeded tenant changes.",
+
+  "tenant": {
+    "companyCode": "myc001",
+    "companyName": "My Company",
+    "currency": "INR",
+    "dateFormat": "DD/MM/YYYY",
+    "financialYearStart": "April"
+  },
+
+  "departments": ["HR", "Sales"],
+  "branches": ["Thrissur"],
+  "designations": ["Brand head"],
+  "shifts": ["General Shift"],
+  "workModes": ["Office", "Work From Home", "Hybrid", "Client Visit", "Field Work"],
+
+  "roles": [
+    "Attendance Administrator",
+    "Employee",
+    "Finance Manager",
+    "HR Administrator",
+    "Manager",
+    "Organization Administrator",
+    "Payroll Administrator"
+  ],
+
+  "leaveTypes": ["Casual Leave", "Sick Leave", "Paid Leave"],
+
+  "knownEmployees": {
+    "hrUser": "hr",
+    "manager": "manager",
+    "salesOne": "sales1",
+    "salesTwo": "sales2",
+    "branchHead": "Branch Head"
+  },
+
+  "documentCategories": ["HR Policies"]
+}

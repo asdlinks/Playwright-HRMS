@@ -1,0 +1,51 @@
+[
+  {
+    "scenario": "Every mandatory field left blank",
+    "erroneousField": "Full Name",
+    "expectedError": "Full name is required"
+  },
+  {
+    "scenario": "Full name omitted",
+    "fullName": "",
+    "email": "at.validation.name@yopmail.com",
+    "dateOfBirth": "06/15/1995",
+    "department": "Sales",
+    "designation": "Brand head",
+    "employeeId": "AT_VAL_NAME",
+    "erroneousField": "Full Name",
+    "expectedError": "Full name is required"
+  },
+  {
+    "scenario": "Email address is malformed",
+    "fullName": "AT Validation Email",
+    "email": "not-an-email-address",
+    "dateOfBirth": "06/15/1995",
+    "department": "Sales",
+    "designation": "Brand head",
+    "employeeId": "AT_VAL_EMAIL",
+    "erroneousField": "Email Address",
+    "expectedError": "Enter a valid email address"
+  },
+  {
+    "scenario": "Date of birth omitted",
+    "fullName": "AT Validation DOB",
+    "email": "at.validation.dob@yopmail.com",
+    "dateOfBirth": "",
+    "department": "Sales",
+    "designation": "Brand head",
+    "employeeId": "AT_VAL_DOB",
+    "erroneousField": "Date of Birth",
+    "expectedError": "Date of birth is required"
+  },
+  {
+    "scenario": "Employee ID omitted",
+    "fullName": "AT Validation EmpId",
+    "email": "at.validation.empid@yopmail.com",
+    "dateOfBirth": "06/15/1995",
+    "department": "Sales",
+    "designation": "Brand head",
+    "employeeId": "",
+    "erroneousField": "Employee ID",
+    "expectedError": "Employee ID is required"
+  }
+]
