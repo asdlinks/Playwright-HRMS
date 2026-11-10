@@ -1,0 +1,70 @@
+{
+  "basicDetails": {
+    "fullName": "Priya Raghavan Nair",
+    "email": "priya.raghavan.nair@yopmail.com",
+    "dateOfBirth": "1994-08-21",
+    "gender": "Female",
+    "bloodGroup": "B+",
+    "maritalStatus": "Single",
+    "nationality": "Indian",
+    "branch": "Thrissur",
+    "department": "Sales",
+    "designation": "Staff",
+    "employeeId": "EMP-2026-0142",
+    "employmentType": "Full-Time",
+    "probationMonths": "6",
+    "joiningDate": "2026-11-02",
+    "reportingManager": "Branch Head",
+    "attendancePolicy": "Office Only",
+    "shift": "General Shift"
+  },
+  "contactDetails": {
+    "contactNumber": "9846012345",
+    "emergencyContactNumber": "9847098765",
+    "addressLine": "Flat 4B, Green Meadows Apartments, Shornur Road, Poothole",
+    "city": "Thrissur",
+    "district": "Thrissur",
+    "state": "Kerala",
+    "pinCode": "680004",
+    "country": "India"
+  },
+  "identityDetails": {
+    "aadhaarNumber": "234567890123",
+    "passportNumber": "N4521873"
+  },
+  "bankDetails": {
+    "panNumber": "ABCPN1234K",
+    "accountHolderName": "Priya Raghavan Nair",
+    "bankName": "State Bank of India",
+    "accountNumber": "30215487963",
+    "branch": "Thrissur Main",
+    "ifscCode": "SBIN0070123"
+  },
+  "education": [
+    {
+      "qualification": "B.Tech",
+      "institution": "Government Engineering College, Thrissur",
+      "specialization": "Computer Science and Engineering",
+      "yearOfPassing": "2016",
+      "grade": "8.4 CGPA"
+    }
+  ],
+  "employmentHistory": [
+    {
+      "companyName": "Infopark Technologies Pvt Ltd",
+      "designation": "Sales Executive",
+      "from": "2016-07-01",
+      "to": "2026-09-30",
+      "mostRecent": true
+    }
+  ],
+  "references": [
+    {
+      "name": "Anil Kumar Menon",
+      "relationship": "Former Manager",
+      "contactNumber": "9895012345",
+      "email": "anil.kumar.menon@yopmail.com",
+      "address": "Kanjany Road, Ayyanthole, Thrissur, Kerala 680003"
+    }
+  ]
+}

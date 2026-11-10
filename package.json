@@ -1,0 +1,26 @@
+{
+  "name": "mywe-hrms-playwright-pom-reference",
+  "version": "1.0.0",
+  "description": "MyWe HRMS - Page Object Model reference framework (Playwright + TypeScript)",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:ci": "cross-env CI=true playwright test",
+    "test:headed": "playwright test --headed",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:auth": "playwright test --grep @auth",
+    "test:rbac": "playwright test --grep @rbac",
+    "test:employee": "playwright test --grep @employee",
+    "test:leave": "playwright test --grep @leave",
+    "test:firefox": "cross-env BROWSER=firefox playwright test",
+    "test:edge": "cross-env BROWSER=edge playwright test",
+    "report": "playwright show-report test-output/reports",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.10.0",
+    "cross-env": "^7.0.3",
+    "typescript": "^5.7.0"
+  }
+}

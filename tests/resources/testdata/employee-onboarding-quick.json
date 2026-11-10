@@ -1,0 +1,31 @@
+{
+  "basicDetails": {
+    "fullName": "Rahul Venugopal Menon",
+    "email": "rahul.venugopal.menon@yopmail.com",
+    "dateOfBirth": "1991-03-14",
+    "gender": "Male",
+    "bloodGroup": "O+",
+    "maritalStatus": "Married",
+    "nationality": "Indian",
+    "branch": "Thrissur",
+    "department": "Sales",
+    "designation": "Staff",
+    "employeeId": "EMP-2026-0143",
+    "employmentType": "Full-Time",
+    "probationMonths": "3",
+    "joiningDate": "2026-11-02",
+    "reportingManager": "Branch Head",
+    "attendancePolicy": "Office Only",
+    "shift": "General Shift"
+  },
+  "contactDetails": {
+    "contactNumber": "9846054321",
+    "emergencyContactNumber": "9847054321",
+    "addressLine": "House No. 12, Vadakke Madom Lane, Punkunnam",
+    "city": "Thrissur",
+    "district": "Thrissur",
+    "state": "Kerala",
+    "pinCode": "",
+    "country": "India"
+  }
+}
